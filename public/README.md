@@ -5,7 +5,7 @@ Imagine that you have a big bucket of water, and you have a bunch of pipes conne
 
 Kirchhoff's Current Law says that the total amount of water (current) going into the bucket has to be the same as the total amount of water coming out of the bucket. Just like how you can't magically create water or make it disappear, you can't create or destroy current in an electrical circuit.
 
-> play with the pipe and see how the water flows
+> IT"S INTERACTIVE! play with the pipe and see how the water flows
 
 
 [It's interactive... Play with It!](/animation.html ':include :type=iframe width=100% height=400px')

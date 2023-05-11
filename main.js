@@ -4,6 +4,8 @@ scene.add(pipe)
 import { arrow1 } from './vectors';
 
 
+//enlarge pipes and arrows and colors for arrows from different pipes
+// add a hand emoji? or overlay to prompt playing around
 function animate() {
 	requestAnimationFrame(animate);
 	renderer.render(scene, camera);
