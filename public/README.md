@@ -11,8 +11,12 @@ Kirchhoff's Current Law says that the total amount of water (current) going into
 [It's interactive... Play with It!](/animation.html ':include :type=iframe width=100% height=400px')
 
 
-So, if you have three pipes bringing water into the bucket, you need to have three pipes taking water out of the bucket to keep everything in balance. And in the same way, if you have three wires bringing current into a circuit, you need to have three wires taking current out of the circuit to make sure that the total amount of current stays the same.
+So, if you have three pipes bringing water into the bucket,(imagine the arrows to be the water) you need to have three pipes taking water out of the bucket to keep everything in balance. And in the same way, if you have three wires bringing current into a circuit, you need to have three wires taking current out of the circuit to make sure that the total amount of current stays the same.
 
 
 
+> Hope This Helped you understand how KCL works
 
+(note: we tried simulating water first to go with our analogy but that proved extremely difficult)
+
+[Source code](https://github.com/Mohamedemad4/threejs-kcl-explainer)

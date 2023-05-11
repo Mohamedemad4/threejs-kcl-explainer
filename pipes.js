@@ -1,7 +1,7 @@
 
 import * as THREE from 'three';
 
-let r = 1, R = 1.25;
+let r = 1, R = 1.1;
 
 // pipe 1
 let pipeShape = new THREE.Shape();
@@ -15,13 +15,13 @@ let pipeGeometry = new THREE.ExtrudeGeometry(pipeShape, {
 pipeGeometry.center();
 let pipeMaterial = new THREE.MeshNormalMaterial({color: "silver"});
 pipeMaterial.transparent=true
-pipeMaterial.opacity=0.7
+pipeMaterial.opacity=0.5
 let pipe = new THREE.Mesh(pipeGeometry, pipeMaterial);
 
 
 
 // minor pipes have different sizes
-let pipe_minor_internal_radius = 0.75, pipe_minor_outer_radius = 1;
+let pipe_minor_internal_radius = 0.75, pipe_minor_outer_radius = 0.85;
 
 // pipe 2
 let pipe2Shape = new THREE.Shape();
@@ -37,7 +37,7 @@ pipe2Geometry.rotateY(2)
 let pipe2Material = new THREE.MeshNormalMaterial({color: "silver"});
 let pipe2 = new THREE.Mesh(pipe2Geometry, pipe2Material);
 pipe2Material.transparent=true
-pipe2Material.opacity=0.7
+pipe2Material.opacity=0.5
 
 
 // pipe 3
@@ -55,7 +55,7 @@ pipe3Geometry.rotateY(-2)
 let pipe3Material = new THREE.MeshNormalMaterial({transparent:true,color: "silver"});
 let pipe3 = new THREE.Mesh(pipe3Geometry, pipe3Material);
 pipe3Material.transparent=true
-pipe3Material.opacity=0.7
+pipe3Material.opacity=0.5
 
 
 pipe.add(pipe2)
