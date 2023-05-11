@@ -1,18 +1,15 @@
-import { pipe,pipe2,pipe3 } from './pipes';
+import { pipe } from './pipes';
 import { scene } from './scene';
-import { waterMesh,render } from './water';
-
 scene.add(pipe)
 
 
 function animate() {
-	requestAnimationFrame( animate );
-	renderer.render( scene, camera );
-    controls.update();
-    
+	requestAnimationFrame(animate);
+	renderer.render(scene, camera);
+	controls.update();
+
 }
 
-render()
 animate();
 
 

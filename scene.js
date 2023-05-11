@@ -1,11 +1,16 @@
 import * as THREE from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
-import { renderer } from './water';
+
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
 camera.position.set(0, 10, 0);
 camera.lookAt(scene.position);
 
+const renderer = new THREE.WebGLRenderer({
+    antialias: true
+});
+renderer.setClearColor(0x404040);
+renderer.setSize( window.innerWidth, window.innerHeight );
 
 const controls = new OrbitControls(camera, renderer.domElement);
 document.body.appendChild( renderer.domElement );
