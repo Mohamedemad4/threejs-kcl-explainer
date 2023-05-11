@@ -1,6 +1,7 @@
 import { pipe } from './pipes';
 import { scene,renderer,camera ,controls} from './scene';
 scene.add(pipe)
+import { arrow1 } from './vectors';
 
 
 function animate() {

@@ -36,6 +36,8 @@ let pipe2Geometry = new THREE.ExtrudeGeometry(pipe2Shape, {
 pipe2Geometry.rotateY(2)
 let pipe2Material = new THREE.MeshNormalMaterial({color: "silver"});
 let pipe2 = new THREE.Mesh(pipe2Geometry, pipe2Material);
+pipe2Material.transparent=true
+pipe2Material.opacity=0.7
 
 
 // pipe 3
@@ -52,6 +54,8 @@ let pipe3Geometry = new THREE.ExtrudeGeometry(pipe3Shape, {
 pipe3Geometry.rotateY(-2)
 let pipe3Material = new THREE.MeshNormalMaterial({transparent:true,color: "silver"});
 let pipe3 = new THREE.Mesh(pipe3Geometry, pipe3Material);
+pipe3Material.transparent=true
+pipe3Material.opacity=0.7
 
 
 pipe.add(pipe2)
