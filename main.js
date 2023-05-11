@@ -1,5 +1,5 @@
 import { pipe } from './pipes';
-import { scene } from './scene';
+import { scene,renderer,camera ,controls} from './scene';
 scene.add(pipe)
 
 

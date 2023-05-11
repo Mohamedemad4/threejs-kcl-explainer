@@ -33,7 +33,7 @@ function onResize(event) {
 
 
 
-export {scene}
+export {scene,renderer,camera,controls}
 
 
 /***
